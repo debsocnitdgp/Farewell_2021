@@ -8,8 +8,12 @@ const Card = (props) => {
   return (
     <>
       <div className="card">
-        <img className="Card-Image" src={img} alt="" />
-         <h1>{name }</h1>
+        <div className="name">
+          <h1>{name}</h1>
+        </div>
+        <div className="box">
+          <img className="Card-Image" src={img} alt="" />
+        </div>
       </div>
     </>
   );
