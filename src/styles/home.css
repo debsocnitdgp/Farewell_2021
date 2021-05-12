@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+.Homepage {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  color: #123456;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.home-cards {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1cb5e0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #000046;
+  border-radius: 20px;
+  border: 0px solid #123456;
+  padding: 15px;
+  box-shadow: 0px 4px 18px rgba(22, 22, 131, 0.5);
+  font-family: Abril Fatface;
+  position: relative;
+}
+.home-card:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.box {
+  display: flex;
+  align-items: flex-end;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.name {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  width: 40%;
+}
+
+.name h1 {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  height: 100%;
+  width: 100%;
+}
+
+.Card-Image {
+  height: 320px;
+  width: auto;
+  margin-bottom: -15px;
+  position: absolute;
+  z-index: 9;
+}
+.footer {
+  font-weight: bold;
+}
+
+.patterns-l {
+  height: 60vh;
+}
+.patterns-m {
+  height: 60vh;
+}
+
+
+svg text {
+  font-family: Monoton;
+  letter-spacing: 10px;
+  stroke: #123456;
+  font-size: 120px;
+  font-weight: 700;
+  stroke-width: 3;
+
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: #123456;
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(200, 78%, 75%, 0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 520px) {
+  .home-cards {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .home-card {
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  .Card-Image {
+    /* width: 150px;
+    height: auto; */
+    height: 220px;
+    width: auto;
+    margin-bottom: -15px;
+    right: -20;
+  }
+}
+@media screen and (min-width: 521px) {
+  .patterns-m {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .patterns-l {
+    display: none;
+  }
+
+  svg text {
+    letter-spacing: 10px;
+    stroke: #123456;
+    font-size: 40px;
+    font-weight: 700;
+    stroke-width: 3;
+    animation: textAnimate 5s infinite alternate;
+  }
+}
