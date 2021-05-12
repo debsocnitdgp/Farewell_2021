@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Carousel } from "3d-react-carousal";
+import React from "react";
+
 import { Container, Grid, Typography, useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
-import GalleryCards from "../components/gallery-section-card";
+
 function GallerySection() {
   let data = [1, 2, 2, 2, 2, 2, 2];
   const theme = useTheme();
@@ -23,7 +23,7 @@ function GallerySection() {
             direction="column"
             xs={6}
             sm={3}
-            spacing={2}
+            spacing={xsUp ? 2 : 1}
           >
             {data.map((item, index) => {
               if (index < 3) {
@@ -32,10 +32,12 @@ function GallerySection() {
                     <img
                       src="https://source.unsplash.com/random"
                       className="gallery__image"
+                      alt=""
                     />
                   </Grid>
                 );
               }
+              return "";
             })}
           </Grid>
           <Grid
@@ -55,10 +57,12 @@ function GallerySection() {
                     <img
                       src="https://source.unsplash.com/random"
                       className="gallery__image"
+                      alt=""
                     />
                   </Grid>
                 );
               }
+              return "";
             })}
           </Grid>
         </Grid>

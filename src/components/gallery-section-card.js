@@ -6,7 +6,7 @@ function GalleryCards({ image, content, size }) {
     <div>
       <Grid item xs={size}>
         <div className="gallery__image__root">
-          <img src={image} className="gallery__image" />
+          <img src={image} alt="idk" className="gallery__image" />
         </div>
       </Grid>
     </div>

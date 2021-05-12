@@ -1,5 +1,5 @@
 import { Container, Grid, Typography, Icon } from "@material-ui/core";
-import React, { useState } from "react";
+import React from "react";
 import ThankYouCard from "../components/thanku-card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";

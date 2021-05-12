@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import HomePage from "../home-page";
 import Profile from "../profile";
-import GallerySection from "../ui/gallery-section-profile";
-import LandingSectionProfile from "../ui/landing-section-profile";
 
 const ReactRouterSetup = () => {
   return (

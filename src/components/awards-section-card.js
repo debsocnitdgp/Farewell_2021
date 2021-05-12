@@ -1,4 +1,4 @@
-import { Card, Container, Grid, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import React from "react";
 import cup from "../images/cup.png";
 function AwardsCard() {
