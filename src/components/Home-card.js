@@ -7,7 +7,7 @@ const Card = (props) => {
 
   return (
     <>
-      <div className="card">
+      <div className="home-card">
         <div className="name">
           <h1>{name}</h1>
         </div>

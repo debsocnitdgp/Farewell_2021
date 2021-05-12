@@ -1,7 +1,7 @@
 import React from "react";
 import video from "./images/video.mov";
 import Navbar from "./components/navbar";
-import HomePage from "./home-page";
+import "./styles/home.css";
 import "./styles/App.css";
 import "./styles/gallery.scss";
 
@@ -10,7 +10,7 @@ import ReactRouterSetup from "./components/Router";
 function App() {
   return (
     <>
-      <video autoPlay loop>
+      <video autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
       <Navbar />

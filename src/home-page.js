@@ -11,24 +11,47 @@ const HomePage = () => {
             Welcome to <br /> Farewell 2021
           </h1>
         </div> */}
-        <div className="patterns">
+        <div className="patterns-l">
           <svg width="100%" height="100%">
             <defs>
-              <style>
+              {/* <style>
                 @import url("https://fonts.googleapis.com/css?
                 family=Lora:400,400i,700,700i");
-              </style>
+              </style> */}
             </defs>
 
-            <text x="50%" y="40%" text-anchor="middle">
+            <text x="50%" y="35%" text-anchor="middle">
               Welcome to
             </text>
-            <text x="50%" y="60%" text-anchor="middle">
-              Fairwell 2021
+            <text x="50%" y="65%" text-anchor="middle">
+              Farewell 2021
             </text>
           </svg>
         </div>
-        <div className="Cards">
+        <div className="patterns-m">
+          <svg width="100%" height="100%">
+            <defs>
+              {/* <style>
+                @import url("https://fonts.googleapis.com/css?
+                family=Lora:400,400i,700,700i");
+              </style> */}
+            </defs>
+
+            <text x="50%" y="27.5%" text-anchor="middle">
+              Welcome
+            </text>
+            <text x="50%" y="42.5%" text-anchor="middle">
+              to
+            </text>
+            <text x="50%" y="57.5%" text-anchor="middle">
+              Farewell
+            </text>
+            <text x="50%" y="72.5%" text-anchor="middle">
+              2021
+            </text>
+          </svg>
+        </div>
+        <div className="home-cards">
           {persons.map((people) => (
             <Card people={people} />
           ))}
