@@ -2,107 +2,39 @@ import React from "react";
 import { Carousel } from "3d-react-carousal";
 import { Container, Grid, Typography } from "@material-ui/core";
 function GallerySection() {
-  let slides = [
-    <img
-      src="https://picsum.photos/800/301/?random"
-      className="gallery__image"
-      alt="2"
-    />,
-    <img
-      src="https://picsum.photos/800/302/?random"
-      className="gallery__image"
-      alt="3"
-    />,
-    <img
-      src="https://picsum.photos/800/303/?random"
-      className="gallery__image"
-      alt="4"
-    />,
-    <img
-      src="https://picsum.photos/800/304/?random"
-      className="gallery__image"
-      alt="5"
-    />,
-  ];
   return (
-    <div className="my-4 py-2 text-center text-white">
-      <Grid container justify="center" alignItems="center">
-        <Container>
-          <Grid item xs={12}>
-            <Typography variant="h2">Engineering @ NIT DGP</Typography>
-            <hr />
-          </Grid>
+    // <div className="my-4 py-2 text-center text-white">
+    //   <Grid container justify="center" alignItems="center">
+    //     <Grid item xs={12}>
+    //       <Typography variant="h2">Engineering @ NIT DGP</Typography>
+    //       <hr />
+    //     </Grid>
+    //     <Grid item>
 
-          <Grid
-            item
-            container
-            justify="flex-start"
-            spacing={1}
-            alignItems="center"
-          >
-            <Grid item xs={4} className="grid">
-              <img
-                src="https://picsum.photos/800/300/?random"
-                className="gallery__image"
-                alt="1"
-              />
-            </Grid>
-            <Grid item xs={8}>
-              <img
-                src="https://picsum.photos/800/301/?random"
-                className="gallery__image"
-                alt="1"
-              />
-            </Grid>
-          </Grid>
-          <Grid
-            item
-            container
-            justify="center"
-            spacing={1}
-            xs={12}
-            alignItems="center"
-          >
-            <Grid item xs={6}>
-              <img
-                src="https://picsum.photos/800/302/?random"
-                className="gallery__image"
-                alt="1"
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <img
-                src="https://picsum.photos/800/303/?random"
-                className="gallery__image"
-                alt="1"
-              />
-            </Grid>
-          </Grid>
-          <Grid
-            item
-            container
-            xs={12}
-            justify="center"
-            spacing={1}
-            alignItems="center"
-          >
-            <Grid item xs={6}>
-              <img
-                src="https://picsum.photos/800/304/?random"
-                className="gallery__image"
-                alt="1"
-              />
-            </Grid>
-            <Grid item xs={4}>
-              <img
-                src="https://picsum.photos/800/301/?random"
-                className="gallery__image"
-                alt="1"
-              />
-            </Grid>
-          </Grid>
-        </Container>
-      </Grid>
+    //     </Grid>
+    //   </Grid>
+    // </div>
+    <div className="container">
+      <div className="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg" />
+        <div className="card__head">Plotting Cat</div>
+      </div>
+      <div className="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg" />
+        <div className="card__head">Angry Cat</div>
+      </div>
+      <div className="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG" />
+        <div className="card__head">Curious Cat</div>
+      </div>
+      <div className="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg" />
+        <div className="card__head">Prowling Cat</div>
+      </div>
+      <div className="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg" />
+        <div className="card__head">Sleepy Cat</div>
+      </div>
     </div>
   );
 }

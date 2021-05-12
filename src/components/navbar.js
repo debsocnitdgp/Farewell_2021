@@ -1,6 +1,7 @@
 import {
   AppBar,
   Container,
+  Grid,
   IconButton,
   Toolbar,
   Typography,
@@ -9,22 +10,27 @@ import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
 function Navbar() {
   return (
-    <div className="navbar">
-      <AppBar
-        elevation={0}
-        style={{ backgroundColor: "transparent" }}
-        position="sticky"
-      >
-        <Toolbar>
-          <IconButton>
-            <HomeIcon />
-          </IconButton>
-          <Typography variant="h6" className="header__logo">
-            FareWell 2021
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <AppBar
+      style={{ backgroundColor: "transparent" }}
+      elevation={0}
+      position="static"
+    >
+      <Toolbar>
+        <Container>
+          <Grid container justify="center" alignItems="center">
+            <Grid item>
+              <Typography variant="body2">Farewell 2021</Typography>
+            </Grid>
+            <Grid item xs></Grid>
+            <Grid item>
+              <IconButton>
+                <HomeIcon />
+              </IconButton>
+            </Grid>
+          </Grid>
+        </Container>
+      </Toolbar>
+    </AppBar>
   );
 }
 

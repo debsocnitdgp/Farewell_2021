@@ -3,8 +3,11 @@ import video from "./images/video.mov";
 import Navbar from "./components/navbar";
 import HomePage from "./home-page";
 import "./styles/App.css";
+import "./styles/gallery.scss";
+
 import GallerySection from "./ui/gallery-section-profile";
 import LandingSectionProfile from "./ui/landing-section-profile";
+import AwardsSection from "./ui/awards-section-profile";
 function App() {
   return (
     <>
@@ -14,7 +17,8 @@ function App() {
       <Navbar />
       <LandingSectionProfile />
       <GallerySection />
-      <HomePage />
+      <AwardsSection />
+      {/* <HomePage /> */}
     </>
   );
 }

@@ -4,6 +4,12 @@ import { createMuiTheme } from "@material-ui/core";
 
 const Theme = createMuiTheme({
   typography: {
+    //title
+    body2: {
+      fontFamily: ["Cookie", "cursive"].join(","),
+      fontWeight: 400,
+      fontSize: "2.3rem",
+    },
     //landing section text
     h5: {
       fontFamily: "Poppins",
@@ -21,6 +27,11 @@ const Theme = createMuiTheme({
     h2: {
       fontFamily: "Raleway",
       fontWeight: 300,
+    },
+    //cards
+    h4: {
+      fontFamily: "Poppins",
+      fontWeight: 400,
     },
   },
 });
