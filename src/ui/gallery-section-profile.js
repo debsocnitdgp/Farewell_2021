@@ -1,41 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel } from "3d-react-carousal";
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Container, Grid, Typography, useMediaQuery } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
+import GalleryCards from "../components/gallery-section-card";
 function GallerySection() {
+  let data = [1, 2, 2, 2, 2, 2, 2];
+  const theme = useTheme();
+  const xsUp = useMediaQuery(theme.breakpoints.up("xs"));
   return (
-    // <div className="my-4 py-2 text-center text-white">
-    //   <Grid container justify="center" alignItems="center">
-    //     <Grid item xs={12}>
-    //       <Typography variant="h2">Engineering @ NIT DGP</Typography>
-    //       <hr />
-    //     </Grid>
-    //     <Grid item>
-
-    //     </Grid>
-    //   </Grid>
-    // </div>
-    <div className="container">
-      <div className="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg" />
-        <div className="card__head">Plotting Cat</div>
-      </div>
-      <div className="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg" />
-        <div className="card__head">Angry Cat</div>
-      </div>
-      <div className="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG" />
-        <div className="card__head">Curious Cat</div>
-      </div>
-      <div className="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg" />
-        <div className="card__head">Prowling Cat</div>
-      </div>
-      <div className="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg" />
-        <div className="card__head">Sleepy Cat</div>
-      </div>
-    </div>
+    <>
+      <Container>
+        <Grid container justify="center" alignItems="center" spacing={2}>
+          <Grid item xs={12} className="text-center">
+            <Typography variant="h2">Gallery</Typography>
+            <hr />
+          </Grid>
+          <Grid
+            item
+            container
+            justify="flex-start"
+            alignItems="flex-start"
+            direction="column"
+            xs={6}
+            sm={3}
+            spacing={2}
+          >
+            {data.map((item, index) => {
+              if (index < 3) {
+                return (
+                  <Grid item>
+                    <img
+                      src="https://source.unsplash.com/random"
+                      className="gallery__image"
+                    />
+                  </Grid>
+                );
+              }
+            })}
+          </Grid>
+          <Grid
+            item
+            container
+            justify="flex-start"
+            alignItems="flex-start"
+            direction="column"
+            xs={6}
+            sm={3}
+            spacing={2}
+          >
+            {data.map((item, index) => {
+              if (index > 3) {
+                return (
+                  <Grid item>
+                    <img
+                      src="https://source.unsplash.com/random"
+                      className="gallery__image"
+                    />
+                  </Grid>
+                );
+              }
+            })}
+          </Grid>
+        </Grid>
+        <div className="gallery__root"></div>
+      </Container>
+    </>
   );
 }
 

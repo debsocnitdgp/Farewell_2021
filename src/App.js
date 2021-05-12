@@ -3,7 +3,7 @@ import video from "./images/video.mov";
 import Navbar from "./components/navbar";
 import HomePage from "./home-page";
 import "./styles/App.css";
-import "./styles/gallery.scss";
+// import "./styles/gallery.scss";
 
 import Footer from "./components/footer";
 import ReactRouterSetup from "./components/Router";
