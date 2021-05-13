@@ -10,7 +10,7 @@ function AwardsSection() {
           <Grid item xs={12} className="text-center">
             <Typography variant="h2">Awards</Typography>
           </Grid>
-          <hr style={{ border: "1px solid black", width: "100%" }} />
+          <hr style={{ border: "1px solid black" }} />
           <Grid
             item
             container

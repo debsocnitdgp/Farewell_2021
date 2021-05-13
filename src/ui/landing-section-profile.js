@@ -13,7 +13,7 @@ function LandingSectionProfile() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <div className="landing__section__text">
-              <Typography variant="h5">HI I AM</Typography>
+              <Typography variant="h5">HELLO</Typography>
               <Typography variant="h3" className="landing__section__name">
                 MAHIMA KRITI
               </Typography>

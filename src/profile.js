@@ -7,7 +7,7 @@ function Profile() {
   return (
     <div>
       <LandingSectionProfile />
-      <GallerySection />
+      {/* <GallerySection /> */}
 
       <AwardsSection />
       <ThankYouBoard />

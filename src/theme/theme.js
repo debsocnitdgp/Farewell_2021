@@ -11,7 +11,8 @@ const Theme = createMuiTheme({
     //landing section text
     h5: {
       fontFamily: "Poppins",
-      fontWeight: 300,
+      fontWeight: 600,
+      color: "#123456",
     },
     h3: {
       fontFamily: "Poppins",
