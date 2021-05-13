@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html,
 body {
   list-style: none;
@@ -19,6 +20,13 @@ video {
 /*Navbar*/
 .navbar {
   z-index: 100;
+}
+.header {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 25px;
+  color:#123456;
 }
 
 /*----------------------------------Landing Section Individual Pages  ------------------------------------------- */
