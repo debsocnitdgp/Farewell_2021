@@ -98,7 +98,7 @@
   background-color: #123456;
 }
 
- .patterns-s > svg text,.patterns-m > svg text{
+.patterns-l svg text,.patterns-m svg text,.patterns-s svg text{
   font-family: Monoton;
   letter-spacing: 10px;
   stroke: #123456;

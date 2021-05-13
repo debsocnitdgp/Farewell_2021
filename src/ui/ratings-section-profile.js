@@ -29,13 +29,16 @@ const Ratings = () => {
             const percentage = isVisible ? 70 : 0;
             return (
               <CircularProgressbarWithChildren 
-                value={percentage}>
-                  text={`${percentage}%`}
+                value={percentage}
+                text={`${percentage}%`}>
+                 
                 </CircularProgressbarWithChildren>
             );
           }}
         </VisibilitySensor>
 
+        
+ <h3>Sarcasm</h3>
 </div>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -51,6 +54,7 @@ const Ratings = () => {
               );
             }}
           </VisibilitySensor>
+
   </div>
         </Grid>
         
