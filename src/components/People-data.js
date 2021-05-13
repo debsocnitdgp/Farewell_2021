@@ -3,6 +3,7 @@ import clanbhaiya1 from "../images/clanbhaiya1.png";
 import kartickbhaiya1 from "../images/kartickbhaiya1.png";
 import sudeeptabhaiya1 from "../images/sudeeptabhaiya1.png";
 import snehadi1 from "../images/snehadi1.png";
+import sarahdi1 from "../images/sarahdi1.png";
 
  export const persons = [
   {
@@ -32,7 +33,7 @@ import snehadi1 from "../images/snehadi1.png";
   },
   {
     id: 6,
-    img: mahimadi1,
-    name: "Mahima Kriti",
+    img: sarahdi1,
+    name: "Sarah Baitullah",
   },
 ];
