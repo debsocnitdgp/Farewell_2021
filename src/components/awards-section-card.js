@@ -5,13 +5,21 @@ function AwardsCard() {
   return (
     <div className="awards__root text-white">
       <Grid container justify="flex-start" alignItems="center">
-        <Grid item xs={6}>
+        <Grid item xs={4}>
           <img src={cup} alt="" className="awards__image" />
         </Grid>
-        <Grid item xs={6}>
-          <Typography>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis
-            eos perspiciatis
+        <Grid item xs></Grid>
+        <Grid item xs={7}>
+          <Typography
+            style={{
+              color: "#123456",
+              textAlign: "right",
+              fontWeight: "bolder",
+              fontSize: "1rem",
+              textTransform: "uppercase",
+            }}
+          >
+            The vast vocabulary award
           </Typography>
         </Grid>
       </Grid>

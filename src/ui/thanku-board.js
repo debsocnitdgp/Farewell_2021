@@ -1,10 +1,16 @@
-import { Container, Grid, Typography, Icon } from "@material-ui/core";
+import {
+  Container,
+  Grid,
+  Typography,
+  Icon,
+  useMediaQuery,
+} from "@material-ui/core";
 import React from "react";
 import ThankYouCard from "../components/thanku-card";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles, useTheme } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -14,14 +20,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 function ThankYouBoard() {
   const classes = useStyles();
-
+  const theme = useTheme();
+  const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <>
-      <Container className="my-4">
+      <Container className="my-4 py-5 text-center">
         <Grid container justify="center" alignItems="center">
           <Grid item xs={12} className="text-center">
-            <Typography variant="h2">Achievements</Typography>
-            <hr style={{ border: "1px solid black" }} />
+            <Typography variant={xsUp ? "h2" : "subtitle1"}>
+              Messages For You
+            </Typography>
+            <div className="line"></div>
           </Grid>
           <Grid item>
             <Icon style={{ color: "#0e0e25" }}>

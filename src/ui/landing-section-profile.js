@@ -17,8 +17,8 @@ function LandingSectionProfile() {
               <Typography variant="h3" className="landing__section__name">
                 MAHIMA KRITI
               </Typography>
-              <hr />
-              <Typography variant="body1">
+
+              <Typography style={{ fontWeight: "600" }}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Delectus quaerat dolor voluptas cumque blanditiis quo doloremque
                 dolorum aliquid nihil corrupti!

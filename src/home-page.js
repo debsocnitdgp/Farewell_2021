@@ -1,10 +1,12 @@
 import React from "react";
 import Card from "./components/Home-card";
 import { persons } from "./components/People-data";
+import Navbar from "./components/navbar-home";
 
 const HomePage = () => {
   return (
     <>
+      <Navbar />
       <div className="Homepage">
         {/* <div className="Home">
           <h1>
