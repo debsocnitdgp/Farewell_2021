@@ -1,0 +1,159 @@
+.main-container{
+  margin-top:50px;
+}
+
+.rating-container{
+  height:75vh;
+  width:90%;
+  margin:auto;
+  border-radius:5px;
+  /* box-shadow: 0px 10px 10px 10px #000000; */
+  margin-top:50px;
+  margin-bottom:100px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+  grid-template-rows:repeat(2,1fr);
+  grid-gap:25px 25px;
+}
+
+h1{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 270;
+}
+
+.rating1,.rating2,.rating3{
+ 
+  /* box-shadow: 0 10px 10px 10px #000000; */
+  background-color:#ee9617;
+  background-image:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  display:flex;
+  width: 100%;
+  padding-bottom: 20px;
+  border-radius: 14px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+ h3{
+  text-align:center;
+  padding-top:10px;
+ }
+
+
+
+
+@media screen and (max-width:412px) {
+
+  .rating-container{
+  height:80vh;
+  width:90%;
+  /* margin:auto; */
+  border-radius:5px;
+  /* box-shadow: 0px 10px 10px 10px #000000; */
+  margin-top:50px;
+  margin-bottom:100px;
+  display:grid;
+  /* grid-template-rows:repeat(auto-fit,minmax(100px,1fr)); */
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:25px 25px;
+
+  }
+
+
+.rating1,.rating2,.rating3{
+  height:200px;
+  background-color:#ee9617;
+  background-image:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  
+  border-radius:20px;
+  /* box-shadow: 0 10px 10px 10px #000000; */
+}
+
+ 
+
+.CircularProgressbar {
+    /*
+     * This fixes an issue where the CircularProgressbar svg has
+     * 0 width inside a "display: flex" container, and thus not visible.
+     */
+     width: 100vh; 
+    padding:30px 0 0 30px;
+    /*
+     * This fixes a centering issue with CircularProgressbarWithChildren:
+     * https://github.com/kevinsqi/react-circular-progressbar/issues/94
+     */
+    vertical-align: middle;
+  }
+  
+  
+  
+  
+}
+
+
+
+
+
+
+.CircularProgressbar {
+  /*
+   * This fixes an issue where the CircularProgressbar svg has
+   * 0 width inside a "display: flex" container, and thus not visible.
+   */
+  width: 40%;
+  padding:30px 0 0 30px;
+  /*
+   * This fixes a centering issue with CircularProgressbarWithChildren:
+   * https://github.com/kevinsqi/react-circular-progressbar/issues/94
+   */
+  vertical-align: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #00b0ff87;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease 0s;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6;
+  /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
+  stroke-linecap: round;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #000000;
+  font-size: 20px;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-background {
+  fill: #ff6600;
+}
+
+/*
+ * Sample background styles. Use these with e.g.:
+ *
+ *   <CircularProgressbar
+ *     className="CircularProgressbar-inverted"
+ *     background
+ *     percentage={50}
+ *   />
+ */
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+  fill: #3e98c7;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+  fill: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+  stroke: #fff;
+}
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+  stroke: transparent;
+}

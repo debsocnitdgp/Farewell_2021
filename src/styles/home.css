@@ -110,14 +110,13 @@
   background-color: #123456;
 }
 
-svg text {
+.patterns-l svg text,.patterns-m svg text,.patterns-s svg text{
   font-family: Monoton;
   letter-spacing: 10px;
   stroke: #123456;
   font-size: 120px;
   font-weight: 700;
   stroke-width: 3;
-
   animation: textAnimate 5s infinite alternate;
 }
 

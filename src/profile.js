@@ -1,6 +1,7 @@
 import React from "react";
 //import GallerySection from "./ui/gallery-section-profile";
 import LandingSectionProfile from "./ui/landing-section-profile";
+import Ratings from "./ui/ratings-section-profile";
 import AwardsSection from "./ui/awards-section-profile";
 import ThankYouBoard from "./ui/thanku-board";
 import GallerySection from "./ui/gallery";
@@ -12,6 +13,7 @@ function Profile() {
       <Navbar />
       <LandingSectionProfile />
       <GallerySection />
+      <Ratings/>
       <AwardsSection />
       <ThankYouBoard />
     </div>
