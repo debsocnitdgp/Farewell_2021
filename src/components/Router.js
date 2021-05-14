@@ -11,7 +11,7 @@ const ReactRouterSetup = () => {
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route exact path="/i">
+        <Route path="/:i">
           {/* <LandingSectionProfile />
                 <GallerySection /> */}
           <Profile />
