@@ -51,3 +51,14 @@ photos img:hover {
     height: 90vh;
     }
 } 
+
+/* @media screen and (max-width: 700px ) {
+    photos {
+        height: 60vh;
+    }
+}  */
+@media screen and (max-width: 510px) {
+    photos {
+        height: 45vh;
+    }
+}

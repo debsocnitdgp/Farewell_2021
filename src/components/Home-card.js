@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = (props) => {
-  const { name, img } = props.people;
+  const { id, name, dp } = props.people;
   console.log(props.people);
   console.log("high");
 
@@ -12,7 +12,7 @@ const Card = (props) => {
           <h1>{name}</h1>
         </div>
         <div className="box">
-          <img className="Card-Image" src={img} alt="" />
+          <img className="Card-Image" src= {`http://res.cloudinary.com/paulserver/${dp}`} alt="" />
         </div>
       </div>
     </>
