@@ -37,8 +37,8 @@ const Ratings = () => {
           }}
         </VisibilitySensor>
 
-
- <div><h3 className="rating-parameter">Sarcasm</h3></div>
+{/* 
+ <div><h3 className="rating-parameter">Sarcasm</h3></div> */}
 </div>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -59,8 +59,10 @@ const Ratings = () => {
         </Grid>
         
 
+
         <Grid item xs={12} sm={4}>
-        <div className="rating2">
+          
+          <div className="rating2">
    <VisibilitySensor>
             {({ isVisible }) => {
               const percentage = isVisible ? 20 : 0;
