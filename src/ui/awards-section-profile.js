@@ -2,7 +2,9 @@ import { Container, Grid, Typography, useMediaQuery } from "@material-ui/core";
 import React from "react";
 import AwardsCard from "../components/awards-section-card";
 import { useTheme } from "@material-ui/styles";
-function AwardsSection() {
+function AwardsSection(props) {
+  const awa = props.award;
+  console.log(awa);
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
@@ -22,18 +24,9 @@ function AwardsSection() {
             alignItems="center"
             spacing={3}
           >
-            <Grid item xs={10} sm={4}>
-              <AwardsCard />
-            </Grid>
-            <Grid item xs={10} sm={4}>
-              <AwardsCard />
-            </Grid>
-            <Grid item xs={10} sm={4}>
-              <AwardsCard />
-            </Grid>
-            <Grid item xs={10} sm={4}>
-              <AwardsCard />
-            </Grid>
+            {awa?(awa.map((people) => (<Grid item xs={10} sm={4}>
+              <AwardsCard people={people} />
+            </Grid>))) : (<> </>)}
           </Grid>
         </Grid>
       </Container>

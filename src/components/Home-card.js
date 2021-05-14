@@ -7,14 +7,12 @@ const Card = (props) => {
 
   return (
     <>
-      <div className="home-card">
         <div className="name">
           <h1>{name}</h1>
         </div>
         <div className="box">
           <img className="Card-Image" src= {`http://res.cloudinary.com/paulserver/${dp}`} alt="" />
         </div>
-      </div>
     </>
   );
 };

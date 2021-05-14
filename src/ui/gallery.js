@@ -18,7 +18,7 @@ export default function Gallery(props) {
         </Grid>
         <photos>
           
-            {gal.map((people) => (
+            {gal?.map((people) => (
               <div className="hex-cell">
              <img
               src={`http://res.cloudinary.com/paulserver/${people.im}`}

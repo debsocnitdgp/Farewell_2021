@@ -1,12 +1,14 @@
 import { Grid, Typography } from "@material-ui/core";
 import React from "react";
 import cup from "../images/cup.png";
-function AwardsCard() {
+function AwardsCard(props) {
+  const awa = props.people;
+  
   return (
     <div className="awards__root text-white">
       <Grid container justify="flex-start" alignItems="center">
         <Grid item xs={4}>
-          <img src={cup} alt="" className="awards__image" />
+          <img src={`http://res.cloudinary.com/paulserver/${awa.pict}`} alt="" className="awards__image" />
         </Grid>
         <Grid item xs></Grid>
         <Grid item xs={7}>
@@ -19,7 +21,7 @@ function AwardsCard() {
               textTransform: "uppercase",
             }}
           >
-            The vast vocabulary award
+            {awa.myaward}
           </Typography>
         </Grid>
       </Grid>

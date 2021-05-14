@@ -31,8 +31,8 @@ const url = `https://debsocfarwell.herokuapp.com/webapp/apireqseniori/${i}`;
       <Navbar />
       <LandingSectionProfile seno={seniors.sname} pic={seniors.pic} desc={seniors.description}/>
       <GallerySection gall={seniors.gall}/>
-      <Ratings/>
-      <AwardsSection />
+      <Ratings rate={seniors.rat}/>
+      <AwardsSection award={seniors.award}/>
       <Favourite/>
       <ThankYouBoard />
     </div>
