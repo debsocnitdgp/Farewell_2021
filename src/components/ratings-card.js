@@ -1,10 +1,6 @@
 import { Grid, Typography, Container } from "@material-ui/core";
 import React from "react";
-import {
-  CircularProgressbarWithChildren,
-  buildStyles,
-  CircularProgressbar,
-} from "react-circular-progressbar";
+import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 function RatingsCard({ percentage }) {
   return (

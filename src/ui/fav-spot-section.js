@@ -25,7 +25,8 @@ function FavSpot({ image }) {
               />
             </div>
           </Grid>
-          <Grid item xs={12}>
+
+          <Grid item xs={12} className="text-center">
             <Typography
               variant="h6"
               className="mx-2"
@@ -34,7 +35,6 @@ function FavSpot({ image }) {
                 textAlign: "center",
                 // verticalAlign: "middle",
                 margin: "1px auto",
-                maxWidth: "600px",
               }}
             >
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
