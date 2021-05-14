@@ -25,25 +25,7 @@ const Ratings = () => {
             spacing={2}
             className="py-2 my-4"
           >
-            <Grid item xs={12} sm={4}>
-              <div className="rating1">
-                <VisibilitySensor>
-                  {({ isVisible }) => {
-                    const percentage = isVisible ? 70 : 0;
-                    return (
-                      <CircularProgressbarWithChildren
-                        value={percentage}
-                        // text={`${percentage}%`}
-                      >
-                        <Typography>{percentage}</Typography>
-                      </CircularProgressbarWithChildren>
-                    );
-                  }}
-                </VisibilitySensor>
-
-                <h3>Sarcasm</h3>
-              </div>
-            </Grid>
+            <Grid item xs={12} sm={4}></Grid>
           </Grid>
         </Grid>
       </Container>

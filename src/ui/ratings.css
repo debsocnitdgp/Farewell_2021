@@ -83,10 +83,6 @@ h3 {
 }
 
 .CircularProgressbar {
-  /*
-   * This fixes an issue where the CircularProgressbar svg has
-   * 0 width inside a "display: flex" container, and thus not visible.
-   */
   width: 40%;
   padding: 30px 0 0 30px;
   /*
@@ -104,14 +100,13 @@ h3 {
 
 .CircularProgressbar .CircularProgressbar-trail {
   stroke: #d6d6d6;
-  /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
   stroke-linecap: round;
 }
 
 .CircularProgressbar .CircularProgressbar-text {
   fill: #000000;
   font-size: 20px;
-  dominant-baseline: middle;
+
   text-anchor: middle;
 }
 
