@@ -37,8 +37,8 @@ const Ratings = () => {
           }}
         </VisibilitySensor>
 
-        
- <h3>Sarcasm</h3>
+
+ <div><h3 className="rating-parameter">Sarcasm</h3></div>
 </div>
         </Grid>
         <Grid item xs={12} sm={4}>

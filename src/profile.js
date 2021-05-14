@@ -4,8 +4,10 @@ import LandingSectionProfile from "./ui/landing-section-profile";
 import Ratings from "./ui/ratings-section-profile";
 import AwardsSection from "./ui/awards-section-profile";
 import ThankYouBoard from "./ui/thanku-board";
+import Favourite from "./ui/favouriteplace-section-profile";
 import GallerySection from "./ui/gallery";
 import Navbar from "./components/navbar-profile";
+
 
 function Profile() {
   return (
@@ -15,6 +17,7 @@ function Profile() {
       <GallerySection />
       <Ratings/>
       <AwardsSection />
+      <Favourite/>
       <ThankYouBoard />
     </div>
   );
