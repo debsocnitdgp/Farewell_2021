@@ -4,16 +4,16 @@ import LandingSectionProfile from "./ui/landing-section-profile";
 import Ratings from "./ui/ratings-section-profile";
 import AwardsSection from "./ui/awards-section-profile";
 import ThankYouBoard from "./ui/thanku-board";
-import Favourite from "./ui/favouriteplace-section-profile";
+
 import GallerySection from "./ui/gallery";
 import Navbar from "./components/navbar-profile";
-import {useParams} from  "react-router-dom";
-import { useState, useEffect, useCallback} from 'react';
-
+import { useParams } from "react-router-dom";
+import { useState, useEffect, useCallback } from "react";
+import FavSpot from "./ui/fav-spot-section";
 
 function Profile() {
-const { i } = useParams();
-const url = `https://debsocfarwell.herokuapp.com/webapp/apireqseniori/${i}`;
+  const { i } = useParams();
+  const url = `https://debsocfarwell.herokuapp.com/webapp/apireqseniori/${i}`;
   const [seniors, setSeniors] = useState([]);
 
   const getSeniors = useCallback(async () => {
@@ -25,16 +25,20 @@ const url = `https://debsocfarwell.herokuapp.com/webapp/apireqseniori/${i}`;
   useEffect(() => {
     getSeniors();
   }, [url, getSeniors]);
- console.log(seniors);
+  console.log(seniors);
   return (
     <div>
       <Navbar />
-      <LandingSectionProfile seno={seniors.sname} pic={seniors.pic} desc={seniors.description}/>
-      <GallerySection gall={seniors.gall}/>
-      <Ratings/>
+      <LandingSectionProfile
+        seno={seniors.sname}
+        pic={seniors.pic}
+        desc={seniors.description}
+      />
+      <GallerySection gall={seniors.gall} />
+      <Ratings />
       <AwardsSection />
-      <Favourite/>
       <ThankYouBoard />
+      <FavSpot />
     </div>
   );
 }

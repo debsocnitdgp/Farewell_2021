@@ -1,12 +1,9 @@
 import React from "react";
-import "./ratings.css";
-import {
-  CircularProgressbarWithChildren,
-  buildStyles,
-  CircularProgressbar,
-} from "react-circular-progressbar";
+import "../styles/ratings.css";
+
 import VisibilitySensor from "react-visibility-sensor";
 import { Container, Grid, Typography } from "@material-ui/core";
+import RatingsCard from "../components/ratings-card";
 
 const Ratings = () => {
   return (
@@ -25,7 +22,17 @@ const Ratings = () => {
             spacing={2}
             className="py-2 my-4"
           >
-            <Grid item xs={12} sm={4}></Grid>
+            <Grid item xs={12} sm={4}>
+              <VisibilitySensor>
+                {({ isVisible }) =>
+                  isVisible ? (
+                    <RatingsCard percentage={60} />
+                  ) : (
+                    <RatingsCard percentage={0} />
+                  )
+                }
+              </VisibilitySensor>
+            </Grid>
           </Grid>
         </Grid>
       </Container>
