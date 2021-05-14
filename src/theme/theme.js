@@ -10,11 +10,12 @@ const Theme = createMuiTheme({
     },
     //landing section text
     h5: {
-      fontFamily: "Poppins",
-      fontWeight: 300,
+      fontFamily: "Raleway",
+      fontWeight: 400,
+      // color: "#123456",
     },
     h3: {
-      fontFamily: "Poppins",
+      fontFamily: "Raleway",
       fontWeight: 500,
     },
     body1: {
@@ -25,6 +26,24 @@ const Theme = createMuiTheme({
     h2: {
       fontFamily: "Raleway",
       fontWeight: 300,
+      textTransform: "uppercase",
+      color: "#2b0e37",
+    },
+    button: {
+      textTransform: "uppercase",
+      fontFamily: "Raleway",
+      fontWeight: 300,
+      fontSize: "2.5rem",
+      color: "#2b0e37",
+    },
+    subtitle1: {
+      textTransform: "uppercase",
+      fontFamily: "Raleway",
+      fontWeight: 300,
+      fontSize: "2rem",
+    },
+    subtitle2: {
+      fontSize: "1.1rem",
     },
     //cards
     h4: {

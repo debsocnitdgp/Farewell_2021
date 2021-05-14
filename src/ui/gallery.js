@@ -1,14 +1,18 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
-
+import { Container, Grid, Typography, useMediaQuery } from "@material-ui/core";
+import { useTheme } from "@material-ui/styles";
 export default function Gallery() {
+  const theme = useTheme();
+  const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <>
-      <Container className="my-4">
+      <Container className="my-4 ">
         <Grid container justify="center" alignItems="center" className="my-4">
           <Grid item xs={12} className="text-center">
-            <Typography variant="h2">Memories</Typography>
-            <hr style={{ border: "1px solid black" }} />
+            <Typography variant={xsUp ? "h2" : "button"}>
+              Memories
+              <div className="line"></div>
+            </Typography>
           </Grid>
         </Grid>
         <photos>

@@ -187,7 +187,7 @@
   .patterns-s {
     display: none;
   }
-  svg text {
+  .patterns-m svg text {
     letter-spacing: 10px;
     stroke: #123456;
     font-size: 75px;
@@ -208,7 +208,7 @@
     display: none;
   }
 
-  svg text {
+  .patterns-s svg text {
     letter-spacing: 10px;
     stroke: #123456;
     font-size: 45px;

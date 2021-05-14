@@ -15,19 +15,19 @@ function Navbar() {
       position="static"
     >
       <Toolbar>
-        <Container>
-          <Grid container justify="center" alignItems="center">
-            <Grid item>
-              <div className="header">Farewell 2021</div>
-            </Grid>
-            <Grid item xs></Grid>
-            <Grid item>
-              <IconButton>
-                <HomeIcon />
-              </IconButton>
-            </Grid>
+        {/* <Container> */}
+        <Grid container justify="center" alignItems="center">
+          <Grid item>
+            <div className="header mx-1">Farewell 2021</div>
           </Grid>
-        </Container>
+          <Grid item xs></Grid>
+          <Grid item>
+            <IconButton className="px-0">
+              <HomeIcon style={{ color: "#123456" }} />
+            </IconButton>
+          </Grid>
+        </Grid>
+        {/* </Container> */}
       </Toolbar>
     </AppBar>
   );

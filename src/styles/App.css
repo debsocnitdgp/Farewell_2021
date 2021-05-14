@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 html,
 body {
   list-style: none;
@@ -6,7 +6,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
+/* hr {
+  margin: 10px auto;
+  height: 3px;
+  width: 65%;
+  background-color: #123456;
+} */
 video {
   position: fixed;
   top: 0;
@@ -26,22 +31,22 @@ video {
   font-weight: bold;
   letter-spacing: 5px;
   font-size: 25px;
-  color:#123456;
+  color: #123456;
 }
 
 /*----------------------------------Landing Section Individual Pages  ------------------------------------------- */
 .landing__section__root {
   color: darkblue;
+  text-align: center;
 }
-.landing__section__name,
-hr {
-  color: goldenrod;
+.landing__section__name {
+  color: #2b0e37;
 }
 .landing__section__image {
   object-fit: contain;
   max-width: 400px;
   width: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 /*---------------------------------------- Awards Section  ------------------------------------------------------  */
@@ -61,16 +66,22 @@ hr {
     #203a43,
     #0f2027
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 
   backdrop-filter: blur(6px);
-  border-radius: 5px;
-  box-shadow: 1rem 1rem 1rem #343b40a6;
-  /* border: 2px solid #123456; */
+  border-radius: 10px;
+  /* box-shadow: 0rem 1rem 1rem #343b40a6; */
+  border-top: 2px solid #123456;
+  border-bottom: 2px solid #123456;
+  padding: 15px;
+  font-weight: 400;
 }
+
 .awards__image {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
 }
 /*------------------------------------------------GAllery Section------------------------------------------------*/
 .gallery__image {
@@ -86,9 +97,3 @@ hr {
 }
 
 /*----------------------------------------------------Awards section----------------------------------------------*/
-
-.awards__image {
-  object-fit: contain;
-  width: 100%;
-  max-width: 400px;
-}
