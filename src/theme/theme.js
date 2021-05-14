@@ -26,18 +26,18 @@ const Theme = createMuiTheme({
     h2: {
       fontFamily: "Raleway",
       fontWeight: 300,
-      textTransform: "uppercase",
-      color: "#2b0e37",
+      textTransform: "capitalize",
+      color: "#123456",
     },
     button: {
-      textTransform: "uppercase",
+      textTransform: "capitalize",
       fontFamily: "Raleway",
       fontWeight: 300,
       fontSize: "2.5rem",
-      color: "#2b0e37",
+      color: "#123456",
     },
     subtitle1: {
-      textTransform: "uppercase",
+      textTransform: "capitalize",
       fontFamily: "Raleway",
       fontWeight: 300,
       fontSize: "2rem",

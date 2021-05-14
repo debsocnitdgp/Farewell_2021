@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 export default function Gallery(props) {
-  const gal= props.gall;
+  const gal = props.gall;
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
@@ -17,15 +17,14 @@ export default function Gallery(props) {
           </Grid>
         </Grid>
         <photos>
-          
-            {gal?.map((people) => (
-              <div className="hex-cell">
-             <img
-              src={`http://res.cloudinary.com/paulserver/${people.im}`}
-              alt=""
-            />
+          {gal?.map((people) => (
+            <div className="hex-cell">
+              <img
+                src={`http://res.cloudinary.com/paulserver/${people.im}`}
+                alt=""
+              />
             </div>
-            ))}
+          ))}
         </photos>
       </Container>
     </>
