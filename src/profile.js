@@ -4,10 +4,12 @@ import LandingSectionProfile from "./ui/landing-section-profile";
 import Ratings from "./ui/ratings-section-profile";
 import AwardsSection from "./ui/awards-section-profile";
 import ThankYouBoard from "./ui/thanku-board";
+import Favourite from "./ui/favouriteplace-section-profile";
 import GallerySection from "./ui/gallery";
 import Navbar from "./components/navbar-profile";
 import {useParams} from  "react-router-dom";
 import { useState, useEffect, useCallback} from 'react';
+
 
 function Profile() {
 const { i } = useParams();
@@ -31,6 +33,7 @@ const url = `https://debsocfarwell.herokuapp.com/webapp/apireqseniori/${i}`;
       <GallerySection gall={seniors.gall}/>
       <Ratings/>
       <AwardsSection />
+      <Favourite/>
       <ThankYouBoard />
     </div>
   );
