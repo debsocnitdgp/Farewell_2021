@@ -1,10 +1,6 @@
-import {
-  AppBar,
-  Container,
-  Grid,
-  Toolbar,
-} from "@material-ui/core";
+import { AppBar, Container, Grid, Toolbar } from "@material-ui/core";
 import React from "react";
+import Logo from "../images/Header.png";
 function Navbar() {
   return (
     <AppBar
@@ -16,7 +12,13 @@ function Navbar() {
         <Container>
           <Grid container justify="center" alignItems="center">
             <Grid item>
-              <div className="headerhome">Farewell 2021</div>
+              <div className="headerhome">
+                <img
+                  src={Logo}
+                  alt=""
+                  style={{ height: "45px", width: "auto" }}
+                />
+              </div>
             </Grid>
           </Grid>
         </Container>
