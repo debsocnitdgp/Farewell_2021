@@ -21,7 +21,7 @@ function LandingSectionProfile(props) {
               <Typography variant="h3" className="landing__section__name">
                 {sname}
               </Typography>
-              <Typography style={{ fontWeight: "600" }}>
+              <Typography style={{ fontWeight: "600", marginTop: "13px"}}>
                 {des}
               </Typography>
             </div>
