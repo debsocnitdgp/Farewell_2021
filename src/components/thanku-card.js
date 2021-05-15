@@ -2,13 +2,13 @@ import { Typography, useMediaQuery } from "@material-ui/core";
 import { useTheme } from "@material-ui/styles";
 import React from "react";
 
-function ThankYouCard(props) {
+const ThankYouCard = (props) => {
   const mess = props.mes;
   console.log("this is mess from card", mess);
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <div className="thanku__card__root  my-1 px-2">
+    <div className="thanku__card__root ">
       <div className="thanku__content__root text-center">
         <Typography
           variant="subtitle2"
@@ -29,6 +29,6 @@ function ThankYouCard(props) {
       </div>
     </div>
   );
-}
+};
 
 export default ThankYouCard;

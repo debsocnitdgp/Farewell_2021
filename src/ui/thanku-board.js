@@ -7,8 +7,14 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import ThankYouCard from "../components/thanku-card";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import { makeStyles, useTheme } from "@material-ui/styles";
 
@@ -40,13 +46,44 @@ function ThankYouBoard(props) {
             </Icon>
           </Grid>
         </Grid>
-        <Carousel autoPlay showStatus={false} infiniteLoop>
-          {mes.map((people) => (
-            <div className="slider my-2 py-3">
-              <ThankYouCard mes={people} />
-            </div>
-          ))}
-        </Carousel>
+        {/* <Carousel showThumbs={false} autoPlay showStatus={false} infiniteLoop>
+          {mes.map((item, index) => {
+            if (index <= 4) {
+              console.log("this si from if", item);
+              return (
+                <div className="slider">
+                  <ThankYouCard
+                    mes={item}
+                    key={new Date().getTime().toString()}
+                  />
+                </div>
+              );
+            }
+          })}
+        </Carousel> */}
+        <CarouselProvider
+          naturalSlideWidth={100}
+          naturalSlideHeight={125}
+          totalSlides={5}
+        >
+          <Slider>
+            {mes.map((item, index) => {
+              console.log("this si from if", item);
+              return (
+                <Slide index={index}>
+                  <div className="slider">
+                    <ThankYouCard
+                      mes={item}
+                      key={new Date().getTime().toString()}
+                    />
+                  </div>
+                </Slide>
+              );
+            })}
+          </Slider>
+          <ButtonBack>Back</ButtonBack>
+          <ButtonNext>Next</ButtonNext>
+        </CarouselProvider>
       </Container>
     </>
   );
