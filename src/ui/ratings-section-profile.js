@@ -6,7 +6,7 @@ import { Container, Grid, Typography } from "@material-ui/core";
 import RatingsCard from "../components/ratings-card";
 
 const Ratings = (props) => {
-  const rat= props.rat; 
+  const rat = props.rat;
   return (
     <>
       <Container>
@@ -21,19 +21,21 @@ const Ratings = (props) => {
             justify="center"
             alignItems="center"
             spacing={2}
-            className="py-2 my-4"
+            className="py-2 my-4 ratings__seection__cards"
           >
-            {rat?.map((people) => (<Grid item xs={12} sm={4}>
-              <VisibilitySensor>
-                {({ isVisible }) =>
-                  isVisible ? (
-                    <RatingsCard percentage={people} />
-                  ) : (
-                    <RatingsCard percentage={0} />
-                  )
-                }
-              </VisibilitySensor>
-            </Grid>))}
+            {rat?.map((people) => (
+              <Grid item xs={12} sm={4}>
+                <VisibilitySensor>
+                  {({ isVisible }) =>
+                    isVisible ? (
+                      <RatingsCard percentage={people} />
+                    ) : (
+                      <RatingsCard percentage={0} />
+                    )
+                  }
+                </VisibilitySensor>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Container>
