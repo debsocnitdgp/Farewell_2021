@@ -41,7 +41,7 @@ function ThankYouBoard(props) {
           </Grid>
         </Grid>
         <Carousel autoPlay showStatus={false} infiniteLoop>
-          {mes.map((people) => (
+          {mes?.map((people) => (
             <div className="slider my-2 py-3">
               <ThankYouCard mes={people} />
             </div>
