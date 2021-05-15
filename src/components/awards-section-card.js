@@ -22,7 +22,7 @@ function AwardsCard(props) {
               color: "#123456",
               textAlign: "right",
               fontWeight: "bolder",
-              fontSize: xsUp ? "1.4rem" : "1rem",
+              fontSize: xsUp ? "1.4rem" : "0.8rem",
               textTransform: "uppercase",
             }}
           >

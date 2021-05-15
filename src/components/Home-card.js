@@ -8,7 +8,12 @@ const Card = (props) => {
   return (
     <>
       <div className="name">
-        <h1>{name}</h1>
+        <h1
+          className="home__name"
+          // style={{ fontWeight: 400, fontSize: "1.25rem" }}
+        >
+          {name}
+        </h1>
       </div>
       <div className="box">
         <img

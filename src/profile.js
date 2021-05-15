@@ -43,10 +43,11 @@ function Profile() {
             desc={seniors.description}
           />
           <GallerySection gall={seniors.gall} />
-          <Ratings rat={seniors.rat} />
+
           <AwardsSection award={seniors.award} />
-          <ThankYouBoard messages={seniors.message} />
+          <Ratings rat={seniors.rat} />
           <FavSpot place={seniors.favplace} />
+          <ThankYouBoard messages={seniors.message} />
           <Footer />
         </div>
       )}

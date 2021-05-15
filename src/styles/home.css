@@ -7,7 +7,7 @@
   font-weight: bold;
   letter-spacing: 5px;
   font-size: 30px;
-  color:#123456;
+  color: #123456;
   margin-top: 18px;
 }
 .Homepage {
@@ -39,7 +39,8 @@
   display: flex;
   flex-direction: row;
   background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  background-image: linear-gradient(233deg, #2a2a72 0%, #009ffd 74%);
+
   color: #0c2c4d;
   border-radius: 20px;
   border: 0px solid #123456;
@@ -53,7 +54,26 @@
   transform: scale(1.1);
   transition: 0.6s;
 }
+.home__name {
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-color: #42378f;
+  background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+  /* Set the background size and repeat properties. */
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
 .box {
   display: flex;
   align-items: flex-end;
@@ -111,7 +131,9 @@
   background-color: #123456;
 }
 
-.patterns-l svg text,.patterns-m svg text,.patterns-s svg text{
+.patterns-l svg text,
+.patterns-m svg text,
+.patterns-s svg text {
   font-family: Monoton;
   letter-spacing: 10px;
   stroke: #123456;
@@ -135,8 +157,8 @@
   }
 }
 .guest {
- font-size: 42px;
- font-weight: 700;
+  font-size: 42px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 536px) {
@@ -170,7 +192,6 @@
   .line {
     width: 80%;
   }
-  
 }
 
 @media only screen and (min-width: 1187px) {

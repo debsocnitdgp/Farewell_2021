@@ -4,9 +4,12 @@ const Theme = createMuiTheme({
   typography: {
     //title
     body2: {
-      fontFamily: ["Cookie", "cursive"].join(","),
+      fontFamily: "Cookie",
       fontWeight: 400,
       fontSize: "2.3rem",
+      // background-color: #2a2a72;
+
+      // textFillColor: "transparent",
     },
     //landing section text
     h5: {

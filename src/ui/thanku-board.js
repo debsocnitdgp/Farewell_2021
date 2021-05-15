@@ -23,6 +23,7 @@ function ThankYouBoard(props) {
   const classes = useStyles();
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
+  console.log("this is message from thnku board", mes);
   return (
     <>
       <Container className="my-3 py-2 text-center">
@@ -40,7 +41,7 @@ function ThankYouBoard(props) {
           </Grid>
         </Grid>
         <Carousel autoPlay showStatus={false} infiniteLoop>
-          {mes?.map((people) => (
+          {mes.map((people) => (
             <div className="slider my-2 py-3">
               <ThankYouCard mes={people} />
             </div>
