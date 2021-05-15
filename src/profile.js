@@ -33,7 +33,7 @@ function Profile() {
       <GallerySection gall={seniors.gall}/>
       <Ratings rat={seniors.rat}/>
       <AwardsSection award={seniors.award}/>
-      <ThankYouBoard />
+      <ThankYouBoard messages={seniors.message}/>
       <FavSpot place={seniors.favplace}/>
     </div>
   );

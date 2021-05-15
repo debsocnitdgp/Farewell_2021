@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(8),
   },
 }));
-function ThankYouBoard() {
+function ThankYouBoard(props) {
+  const mes=props.messages;
   const classes = useStyles();
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
@@ -39,21 +40,9 @@ function ThankYouBoard() {
           </Grid>
         </Grid>
         <Carousel autoPlay showStatus={false} infiniteLoop>
-          <div className="slider my-2 py-3">
-            <ThankYouCard />
-          </div>
-          <div className="slider my-2 py-3">
-            <ThankYouCard />
-          </div>
-          <div className="slider my-2 py-3">
-            <ThankYouCard />
-          </div>
-          <div className="slider my-2 py-3">
-            <ThankYouCard />
-          </div>
-          <div className="slider my-2 py-3">
-            <ThankYouCard />
-          </div>
+          {mes?.map((people) => (<div className="slider my-2 py-3">
+            <ThankYouCard mes={people}/>
+          </div>))}
         </Carousel>
       </Container>
     </>
