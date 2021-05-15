@@ -30,9 +30,9 @@ function LandingSectionProfile(props) {
               <Typography
                 variant="h4"
                 style={{
-                  fontFamily: "Caveat",
-                  fontWeight: 700,
-                  fontSize: "3rem",
+                  fontFamily: "Balsamiq Sans",
+                  fontWeight: 600,
+                  fontSize: "2.5rem",
                 }}
               >
                 Hello !

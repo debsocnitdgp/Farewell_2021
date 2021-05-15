@@ -43,7 +43,6 @@ function Profile() {
             desc={seniors.description}
           />
           <GallerySection gall={seniors.gall} />
-
           <AwardsSection award={seniors.award} />
           <Ratings rat={seniors.rat} />
           <FavSpot place={seniors.favplace} />
