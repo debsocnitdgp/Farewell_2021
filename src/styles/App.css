@@ -101,4 +101,14 @@ video {
   width: 100%;
 }
 
-/*----------------------------------------------------Awards section----------------------------------------------*/
+/*----------------------------------------------------Messages section----------------------------------------------*/
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .control-dots .dot {
+  background: #123456 !important ;
+}

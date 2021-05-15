@@ -4,7 +4,7 @@ import React from "react";
 function LandingSectionProfile(props) {
   const sname = props.seno;
   const pix = props.pic;
-  const des=props.desc;
+  const des = props.desc;
 
   return (
     <div className="landing__section__root text-justify my-2">
@@ -12,7 +12,11 @@ function LandingSectionProfile(props) {
         <Grid container justify="center" spacing={3} alignItems="center">
           <Grid item xs={12} sm={6}>
             <div className="landing__section__image__root">
-              <img src={`http://res.cloudinary.com/paulserver/${pix}`} alt="" className="landing__section__image" />
+              <img
+                src={`http://res.cloudinary.com/paulserver/${pix}`}
+                alt=""
+                className="landing__section__image"
+              />
             </div>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -21,7 +25,7 @@ function LandingSectionProfile(props) {
               <Typography variant="h3" className="landing__section__name">
                 {sname}
               </Typography>
-              <Typography style={{ fontWeight: "600" }}>
+              <Typography variant="h6" style={{ fontWeight: "600" }}>
                 {des}
               </Typography>
             </div>

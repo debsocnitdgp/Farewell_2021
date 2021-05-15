@@ -4,7 +4,6 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 function RatingsCard(props) {
   const ra = props.percentage;
-  console.log(ra);
 
   return (
     <>
@@ -13,9 +12,9 @@ function RatingsCard(props) {
           <Grid container item justify="center" alignItems="cetner">
             <Grid item>
               <CircularProgressbar
-                value={ra.rate * 10}
-                text={`${ra.rate * 10}%`}
-                strokeWidth={8}
+                value={ra ? ra.rate * 10 : 0}
+                text={ra ? `${ra.rate * 10}%` : "0%"}
+                strokeWidth={10}
                 styles={{
                   root: {
                     padding: "15px",
@@ -23,13 +22,21 @@ function RatingsCard(props) {
                     maxWidth: "120px",
                   },
                   path: {
-                    stroke: "#123456",
+                    stroke: `${props.color}`,
+                  },
+                  "@global": {
+                    "path:nth-of-type(1)": {
+                      stroke: "#cf9fcf",
+                    },
+                    "path:nth-of-type(2)": {
+                      stroke: "#f8f8f9",
+                    },
                   },
                   text: {
-                    fill: "#123456",
+                    fill: `${props.color}`,
                     fontFamily: "Raleway",
-                    fontWeight: "400",
-                    fontSize: "1.5rem",
+                    fontWeight: "600",
+                    fontSize: "1.8rem",
                   },
                 }}
               />
@@ -40,7 +47,10 @@ function RatingsCard(props) {
                 <div className="ratings__card__content text-right  py-2 px-3">
                   <Typography
                     variant="subtitle2"
-                    style={{ fontWeight: "600", fontSize: "1.5rem" }}
+                    style={{
+                      fontWeight: "600",
+                      fontSize: "1.5rem",
+                    }}
                   >
                     {ra.name}
                   </Typography>

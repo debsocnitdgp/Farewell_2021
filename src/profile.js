@@ -26,15 +26,20 @@ function Profile() {
     getSeniors();
   }, [url, getSeniors]);
   console.log(seniors);
+
   return (
     <div>
       <Navbar />
-      <LandingSectionProfile seno={seniors.sname} pic={seniors.pic} desc={seniors.description}/>
-      <GallerySection gall={seniors.gall}/>
-      <Ratings rat={seniors.rat}/>
-      <AwardsSection award={seniors.award}/>
-      <ThankYouBoard messages={seniors.message}/>
-      <FavSpot place={seniors.favplace}/>
+      <LandingSectionProfile
+        seno={seniors.sname}
+        pic={seniors.pic}
+        desc={seniors.description}
+      />
+      <GallerySection gall={seniors.gall} />
+      <Ratings rat={seniors.rat} />
+      <AwardsSection award={seniors.award} />
+      <ThankYouBoard messages={seniors.message} />
+      <FavSpot place={seniors.favplace} />
     </div>
   );
 }

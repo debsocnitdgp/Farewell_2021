@@ -19,13 +19,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 function ThankYouBoard(props) {
-  const mes=props.messages;
+  const mes = props.messages;
   const classes = useStyles();
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
     <>
-      <Container className="my-4 py-5 text-center">
+      <Container className="my-3 py-2 text-center">
         <Grid container justify="center" alignItems="center">
           <Grid item xs={12} className="text-center">
             <Typography variant={xsUp ? "h2" : "subtitle1"}>
@@ -40,9 +40,11 @@ function ThankYouBoard(props) {
           </Grid>
         </Grid>
         <Carousel autoPlay showStatus={false} infiniteLoop>
-          {mes?.map((people) => (<div className="slider my-2 py-3">
-            <ThankYouCard mes={people}/>
-          </div>))}
+          {mes?.map((people) => (
+            <div className="slider my-2 py-3">
+              <ThankYouCard mes={people} />
+            </div>
+          ))}
         </Carousel>
       </Container>
     </>
