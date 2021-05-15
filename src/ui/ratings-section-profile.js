@@ -5,7 +5,8 @@ import VisibilitySensor from "react-visibility-sensor";
 import { Container, Grid, Typography } from "@material-ui/core";
 import RatingsCard from "../components/ratings-card";
 
-const Ratings = () => {
+const Ratings = (props) => {
+  const rat= props.rat; 
   return (
     <>
       <Container>
@@ -22,17 +23,17 @@ const Ratings = () => {
             spacing={2}
             className="py-2 my-4"
           >
-            <Grid item xs={12} sm={4}>
+            {rat?.map((people) => (<Grid item xs={12} sm={4}>
               <VisibilitySensor>
                 {({ isVisible }) =>
                   isVisible ? (
-                    <RatingsCard percentage={60} />
+                    <RatingsCard percentage={people} />
                   ) : (
                     <RatingsCard percentage={0} />
                   )
                 }
               </VisibilitySensor>
-            </Grid>
+            </Grid>))}
           </Grid>
         </Grid>
       </Container>

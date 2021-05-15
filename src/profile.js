@@ -31,9 +31,8 @@ function Profile() {
       <Navbar />
       <LandingSectionProfile seno={seniors.sname} pic={seniors.pic} desc={seniors.description}/>
       <GallerySection gall={seniors.gall}/>
-      <Ratings rate={seniors.rat}/>
+      <Ratings rat={seniors.rat}/>
       <AwardsSection award={seniors.award}/>
-      <Favourite/>
       <ThankYouBoard />
       <FavSpot />
     </div>
