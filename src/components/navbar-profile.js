@@ -1,6 +1,8 @@
-import { AppBar, Grid, IconButton } from "@material-ui/core";
+import { AppBar, Grid, IconButton, } from "@material-ui/core";
 import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
+import Logo from "../images/Header.png";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <AppBar
@@ -10,16 +12,22 @@ function Navbar() {
       position="static"
     >
       {/* <Toolbar  > */}
-      {/* <Container> */}
-      <Grid container>
-        <Grid item xs={6} style={{ paddingLeft: "10px", marginTop: "7px" }}>
-          <div className="header mx-1">Farewell 2021</div>
-        </Grid>
-        <Grid item xs={6} style={{ textAlign: "right", paddingRight: "12px" }}>
-          <IconButton className="px-0">
-            <HomeIcon style={{ color: "#123456" }} />
-          </IconButton>
-        </Grid>
+        {/* <Container> */}
+        <Grid container>
+          <Grid item xs={9} style={{paddingLeft: "15px", marginTop: "7px"}}>
+            <div className="header mx-1"> <img
+                  src={Logo}
+                  alt=""
+                  style={{ height: "45px", width: "auto" }}
+                /></div>
+          </Grid>
+          <Grid item xs={3} style={{textAlign:"right", paddingRight: "2px"}}>
+            <IconButton >
+              <Link to ="/">
+              <HomeIcon style={{ color: "#123456" , fontSize:"30px", paddingBottom:"5px"}}/>
+              </Link>
+            </IconButton>
+          </Grid>
       </Grid>
       {/* </Container> */}
       {/* </Toolbar> */}

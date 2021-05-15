@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import HomePage from "../home-page";
+import HomePage from "../home-page.js";
 import Profile from "../profile";
 
 const ReactRouterSetup = () => {

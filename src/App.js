@@ -6,7 +6,7 @@ import "./styles/App.css";
 import "./styles/gallery.css";
 // import "./styles/gallery.scss";
 
-import Footer from "./components/footer";
+
 import ReactRouterSetup from "./components/Router";
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       </video>
       {/* <HomePage /> */}
       <ReactRouterSetup />
-      <Footer />
+     
     </>
   );
 }
