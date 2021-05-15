@@ -3,7 +3,8 @@ import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
 function Navbar() {
   return (
-    <AppBar className="navbar"
+    <AppBar
+      className="navbar"
       style={{ backgroundColor: "transparent" }}
       elevation={0}
       position="static"
@@ -19,8 +20,8 @@ function Navbar() {
               <HomeIcon style={{ color: "#123456" }} />
             </IconButton>
           </Grid>
-        </Grid>
-        {/* </Container> */}
+      </Grid>
+      {/* </Container> */}
       {/* </Toolbar> */}
     </AppBar>
   );
