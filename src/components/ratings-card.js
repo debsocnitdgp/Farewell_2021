@@ -2,7 +2,10 @@ import { Grid, Typography, Container } from "@material-ui/core";
 import React from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-function RatingsCard({ percentage }) {
+function RatingsCard(props ) {
+  const ra = props.percentage; 
+  console.log(ra);
+
   return (
     <>
       <Container>
@@ -10,8 +13,8 @@ function RatingsCard({ percentage }) {
           <Grid container item justify="center" alignItems="cetner">
             <Grid item>
               <CircularProgressbar
-                value={percentage}
-                text={`${percentage}%`}
+                value={ra.rate*10}
+                text={`${ra.rate*10}%`}
                 strokeWidth={8}
                 styles={{
                   root: {
@@ -34,7 +37,7 @@ function RatingsCard({ percentage }) {
             <Grid item xs>
               <div className="ratings__card__content">
                 <Typography variant="h6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  {ra.name}
                 </Typography>
               </div>
             </Grid>

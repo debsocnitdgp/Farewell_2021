@@ -29,15 +29,10 @@ function Profile() {
   return (
     <div>
       <Navbar />
-      <LandingSectionProfile
-        seno={seniors.sname}
-        pic={seniors.pic}
-        desc={seniors.description}
-      />
-      <GallerySection gall={seniors.gall} />
-      <Ratings rate={seniors.rat} />
-      <AwardsSection award={seniors.award} />
-
+      <LandingSectionProfile seno={seniors.sname} pic={seniors.pic} desc={seniors.description}/>
+      <GallerySection gall={seniors.gall}/>
+      <Ratings rat={seniors.rat}/>
+      <AwardsSection award={seniors.award}/>
       <ThankYouBoard />
       <FavSpot />
     </div>
