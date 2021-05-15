@@ -15,7 +15,7 @@ function LandingSectionProfile(props) {
           <Grid item xs={12} sm={6}>
             <div className="landing__section__image__root">
               <img
-                src={`http://res.cloudinary.com/paulserver/${pix}`}
+                src={`${process.env.REACT_APP_IMAGE_URL}${pix}`}
                 alt=""
                 className="landing__section__image"
               />

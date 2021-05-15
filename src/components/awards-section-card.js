@@ -10,7 +10,7 @@ function AwardsCard(props) {
       <Grid container justify="flex-start" alignItems="center">
         <Grid item xs={6}>
           <img
-            src={`http://res.cloudinary.com/paulserver/${awa.pict}`}
+            src={`${process.env.REACT_APP_IMAGE_URL}${awa.pict}`}
             alt=""
             className="awards__image"
           />

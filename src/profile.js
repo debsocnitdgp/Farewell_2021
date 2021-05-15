@@ -14,7 +14,7 @@ import Footer from "./components/footer";
 
 function Profile() {
   const { i } = useParams();
-  const url = `https://debsocfarwell.herokuapp.com/webapp/apireqseniori/${i}`;
+  const url = `${process.env.REACT_APP_BACKEND_URL}apireqseniori/${i}`;
   const [seniors, setSeniors] = useState([]);
   const [loading, setLoading] = useState(true);
 

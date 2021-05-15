@@ -9,10 +9,12 @@ import "./styles/gallery.css";
 
 import ReactRouterSetup from "./components/Router";
 function App() {
+  const vid = video;
   return (
     <>
-      <video autoPlay loop muted>
-        <source src={video} type="video/mp4" />
+      <video autoPlay="autoplay" loop="loop" muted >
+        <source src={vid} type="video/mp4" />
+        <source src={vid} type="video/ogg" />
       </video>
       {/* <HomePage /> */}
       <ReactRouterSetup />

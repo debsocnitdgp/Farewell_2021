@@ -20,7 +20,7 @@ export default function Gallery(props) {
           {gal?.map((people) => (
             <div className="hex-cell">
               <img
-                src={`http://res.cloudinary.com/paulserver/${people.im}`}
+                src={`${process.env.REACT_APP_IMAGE_URL}${people.im}`}
                 alt=""
               />
             </div>
