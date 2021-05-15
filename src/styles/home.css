@@ -197,7 +197,8 @@
     animation: textAnimate 5s infinite alternate;
   }
   .Card-Image {
-    height: 270px;
+    height: 320px;
+    margin-top: -30px;
   }
 }
 

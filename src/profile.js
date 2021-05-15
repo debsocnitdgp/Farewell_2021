@@ -34,7 +34,7 @@ function Profile() {
       <Ratings rat={seniors.rat}/>
       <AwardsSection award={seniors.award}/>
       <ThankYouBoard />
-      <FavSpot />
+      <FavSpot place={seniors.favplace}/>
     </div>
   );
 }
