@@ -7,7 +7,7 @@ function AwardsCard(props) {
   return (
     <div className="awards__root text-white">
       <Grid container justify="flex-start" alignItems="center">
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <img
             src={`http://res.cloudinary.com/paulserver/${awa.pict}`}
             alt=""
@@ -15,7 +15,7 @@ function AwardsCard(props) {
           />
         </Grid>
         <Grid item xs></Grid>
-        <Grid item xs={7}>
+        <Grid item xs>
           <Typography
             style={{
               color: "#123456",

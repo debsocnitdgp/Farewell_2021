@@ -84,7 +84,9 @@ video {
 .awards__image {
   object-fit: contain;
   width: 100%;
-  max-width: 300px;
+  /* max-width: 100px; */
+  height: 100px;
+  /* border-radius: 20px; */
 }
 /*------------------------------------------------GAllery Section------------------------------------------------*/
 .gallery__image {
