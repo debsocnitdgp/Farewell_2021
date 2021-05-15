@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./components/Home-card";
-import { persons } from "./components/People-data";
+
 import Navbar from "./components/navbar-home";
-import { useState, useEffect, useCallback} from 'react';
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -94,7 +94,9 @@ const HomePage = () => {
         <div className="line"></div>
         <div className="home-cards">
           {seniors.map((people) => (
-            <Link className="home-card"  to ={`/${people.name}`}><Card people={people} /></Link>
+            <Link className="home-card" to={`/${people.name}`}>
+              <Card people={people} />
+            </Link>
           ))}
         </div>
       </div>
