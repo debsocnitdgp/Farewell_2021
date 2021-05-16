@@ -30,19 +30,19 @@ function LandingSectionProfile(props) {
               <Typography
                 variant="h4"
                 style={{
-                  fontFamily: "Balsamiq Sans",
-                  fontWeight: 600,
+                  fontFamily: "Dancing Script",
+                  fontWeight: 700,
                   fontSize: "2.5rem",
                 }}
               >
-                Hello !
+                Hello
               </Typography>
               <Typography
                 variant="body2"
                 style={{
-                  fontWeight: 400,
-                  fontSize: "4.5rem",
-                  lineHeight: "55px",
+                  fontFamily: "Dancing Script",
+                  fontWeight: 700,
+                  fontSize: "3rem",
                 }}
                 className="landing__section__name"
               >
@@ -51,9 +51,10 @@ function LandingSectionProfile(props) {
               </Typography>
               <Typography
                 style={{
-                  fontWeight: "600",
-                  marginTop: "13px",
+                  fontWeight: "300",
+                  // marginTop: "13px",
                   fontSize: "1.25rem",
+                  fontFamily: "Poppins",
                 }}
               >
                 {des}

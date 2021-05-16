@@ -39,29 +39,6 @@ video {
   margin: 1px auto;
   /* padding-right: 20px; */
 }
-.landing__section__name {
-  /* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
-
-  /* Fallback: Set a background color. */
-  /*background-color: red;
-  
-  /* Create the gradient. */
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
-  background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-  background-color: #42378f;
-  background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
-
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
 
 .landing__section__image {
   object-fit: contain;
@@ -137,11 +114,16 @@ video {
 
 @media screen and (max-width: 600px) {
   .horizontalSlider___281Ls {
-    max-height: 320px;
+    max-height: 500px;
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) and (max-width: 960px) {
   .horizontalSlider___281Ls {
-    max-height: 300px;
+    max-height: 500px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .horizontalSlider___281Ls {
+    max-height: 400px;
   }
 }

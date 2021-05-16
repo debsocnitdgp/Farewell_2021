@@ -47,36 +47,37 @@ function ThankYouBoard(props) {
             </Icon>
           </Grid>
         </Grid>
+        <Container>
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={125}
+            totalSlides={5}
+            infinite={true}
+          >
+            <Slider>
+              {mes.map((item, index) => {
+                console.log("this si from if", item);
+                return (
+                  <Slide index={index}>
+                    <div className="slider">
+                      <ThankYouCard
+                        mes={item}
+                        key={new Date().getTime().toString()}
+                      />
+                    </div>
+                  </Slide>
+                );
+              })}
+            </Slider>
 
-        <CarouselProvider
-          naturalSlideWidth={100}
-          naturalSlideHeight={125}
-          totalSlides={5}
-          infinite={true}
-        >
-          <Slider>
-            {mes.map((item, index) => {
-              console.log("this si from if", item);
-              return (
-                <Slide index={index}>
-                  <div className="slider">
-                    <ThankYouCard
-                      mes={item}
-                      key={new Date().getTime().toString()}
-                    />
-                  </div>
-                </Slide>
-              );
-            })}
-          </Slider>
-
-          <ButtonBack>
-            <ChevronLeftIcon style={{ fontSize: "1.8rem" }} />
-          </ButtonBack>
-          <ButtonNext>
-            <ChevronRightIcon style={{ fontSize: "1.8rem" }} />
-          </ButtonNext>
-        </CarouselProvider>
+            <ButtonBack>
+              <ChevronLeftIcon style={{ fontSize: "1.8rem" }} />
+            </ButtonBack>
+            <ButtonNext>
+              <ChevronRightIcon style={{ fontSize: "1.8rem" }} />
+            </ButtonNext>
+          </CarouselProvider>
+        </Container>
       </Container>
     </>
   );
