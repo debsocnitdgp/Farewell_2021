@@ -46,21 +46,7 @@ function ThankYouBoard(props) {
             </Icon>
           </Grid>
         </Grid>
-        {/* <Carousel showThumbs={false} autoPlay showStatus={false} infiniteLoop>
-          {mes.map((item, index) => {
-            if (index <= 4) {
-              console.log("this si from if", item);
-              return (
-                <div className="slider">
-                  <ThankYouCard
-                    mes={item}
-                    key={new Date().getTime().toString()}
-                  />
-                </div>
-              );
-            }
-          })}
-        </Carousel> */}
+
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={125}

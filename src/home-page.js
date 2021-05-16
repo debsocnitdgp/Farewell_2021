@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Footer from "./components/footer";
 
 const HomePage = () => {
-  const url = "https://debsocfarwell.herokuapp.com/webapp/apireqseniorall/";
+  const url = `${process.env.REACT_APP_BACKEND_URL}apireqseniorall/`;
   const [seniors, setSeniors] = useState([]);
   const [loading, setLoading] = useState(true);
 

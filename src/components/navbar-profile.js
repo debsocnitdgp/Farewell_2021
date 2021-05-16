@@ -18,7 +18,7 @@ function Navbar() {
             <div className="header mx-1"> <img
                   src={Logo}
                   alt=""
-                  style={{ height: "45px", width: "auto" }}
+                  style={{ height: "40px", width: "auto" }}
                 /></div>
           </Grid>
           <Grid item xs={3} style={{textAlign:"right", paddingRight: "2px"}}>

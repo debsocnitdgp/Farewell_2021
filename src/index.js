@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import { ThemeProvider } from "@material-ui/core";
 import App from "./App";
 import Theme from "./theme/theme";
+// import video from "./images/video.mov";
+
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>

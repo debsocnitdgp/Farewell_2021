@@ -18,7 +18,7 @@ const Card = (props) => {
       <div className="box">
         <img
           className="Card-Image"
-          src={`http://res.cloudinary.com/paulserver/${dp}`}
+          src={`${process.env.REACT_APP_IMAGE_URL}${dp}`}
           alt=""
         />
       </div>

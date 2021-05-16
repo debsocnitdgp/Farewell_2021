@@ -21,7 +21,7 @@ function FavSpot(props) {
             <div className="main__container my-3">
               <div className="dark__overlay"></div>
               <img
-                src={`http://res.cloudinary.com/paulserver/${people.imag}`}
+                src={`${process.env.REACT_APP_IMAGE_URL}${people.imag}`}
                 alt="fav"
                 className="fav__spot__image"
               />
