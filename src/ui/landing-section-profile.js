@@ -47,7 +47,7 @@ function LandingSectionProfile(props) {
                   fontWeight: 400,
                   fontSize: "4rem",
                   lineHeight: "70px",
-                  fontFamily: "Parisienne",
+                  fontFamily: i == "Sneha Singh" ? "Cookie" : "Parisienne",
                   padding: "5px",
                 }}
                 className="landing__section__name"
