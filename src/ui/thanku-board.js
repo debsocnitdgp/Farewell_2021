@@ -30,7 +30,6 @@ function ThankYouBoard(props) {
   const classes = useStyles();
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
-  console.log("this is message from thnku board", mes);
   return (
     <>
       <Container className="my-3 py-2 text-center">
@@ -56,7 +55,6 @@ function ThankYouBoard(props) {
           >
             <Slider>
               {mes.map((item, index) => {
-                console.log("this si from if", item);
                 return (
                   <Slide index={index}>
                     <div className="slider">

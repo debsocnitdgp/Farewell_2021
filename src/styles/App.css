@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Parisienne&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 html,
 body {
@@ -38,6 +41,23 @@ video {
   color: #41415f;
   margin: 1px auto;
   /* padding-right: 20px; */
+}
+.landing__section__name {
+  /* Tutorial on https://fossheim.io/writing/posts/css-text-gradient. */
+
+  /* Fallback: Set a background color. */
+  /*background-color: red;
+  
+  /* Create the gradient. */
+  background-color: #d4418e;
+  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .landing__section__image {

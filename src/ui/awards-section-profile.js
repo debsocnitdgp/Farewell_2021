@@ -4,7 +4,6 @@ import AwardsCard from "../components/awards-section-card";
 import { useTheme } from "@material-ui/styles";
 function AwardsSection(props) {
   const awa = props.award;
-  console.log(awa);
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (

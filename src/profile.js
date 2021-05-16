@@ -28,7 +28,7 @@ function Profile() {
   useEffect(() => {
     getSeniors();
   }, [url, getSeniors]);
-  console.log(seniors);
+
 
   return (
     <>

@@ -2,9 +2,7 @@ import React from "react";
 
 const Card = (props) => {
   const { name, dp } = props.people;
-  console.log(props.people);
-  console.log("high");
-
+  
   return (
     <>
       <div className="name">
