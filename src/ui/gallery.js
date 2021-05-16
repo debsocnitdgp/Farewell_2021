@@ -18,7 +18,7 @@ export default function Gallery(props) {
         </Grid>
         <photos>
           {gal?.map((people) => (
-            <div className="hex-cell">
+            <div className="hex-cell" key={people.id}>
               <img
                 src={`${process.env.REACT_APP_IMAGE_URL}${people.im}`}
                 alt=""

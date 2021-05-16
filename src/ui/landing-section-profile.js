@@ -3,10 +3,10 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import { useTheme } from "@material-ui/styles";
-// import mahimadi1 from "../images/mahimadi1.png";
+
 function LandingSectionProfile(props) {
   const { i } = useParams();
-  console.log("this is ", i);
+
   const sname = props.seno;
   const pix = props.pic;
   const des = props.desc;
@@ -53,8 +53,8 @@ function LandingSectionProfile(props) {
                 className="landing__section__name"
               >
                 {sname}
-                <hr style={{ border: "1px solid #123456" }} />
               </Typography>
+              <hr style={{ border: "1px solid #123456" }} />
               <Typography
                 style={{
                   fontWeight: "600",

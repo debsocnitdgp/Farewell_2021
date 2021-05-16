@@ -30,7 +30,14 @@ const Ratings = (props) => {
             className="py-2 my-4 ratings__seection__cards"
           >
             {rat?.map((people, index) => (
-              <Grid item xs={12} sm={6} md={6} lg={4}>
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={6}
+                lg={4}
+                key={new Date().getMilliseconds().toString()}
+              >
                 <VisibilitySensor>
                   {({ isVisible }) =>
                     isVisible ? (

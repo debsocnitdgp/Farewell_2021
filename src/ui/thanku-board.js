@@ -50,7 +50,7 @@ function ThankYouBoard(props) {
           <CarouselProvider
             naturalSlideWidth={100}
             naturalSlideHeight={125}
-            totalSlides={5}
+            totalSlides={mes.length}
             infinite={true}
           >
             <Slider>
@@ -60,7 +60,7 @@ function ThankYouBoard(props) {
                     <div className="slider">
                       <ThankYouCard
                         mes={item}
-                        key={new Date().getTime().toString()}
+                        key={new Date().getMilliseconds().toString()}
                       />
                     </div>
                   </Slide>
