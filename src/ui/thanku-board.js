@@ -17,7 +17,8 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import { makeStyles, useTheme } from "@material-ui/styles";
-
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 const useStyles = makeStyles((theme) => ({
   icon: {
     width: theme.spacing(8),
@@ -51,6 +52,7 @@ function ThankYouBoard(props) {
           naturalSlideWidth={100}
           naturalSlideHeight={125}
           totalSlides={5}
+          infinite={true}
         >
           <Slider>
             {mes.map((item, index) => {
@@ -67,8 +69,13 @@ function ThankYouBoard(props) {
               );
             })}
           </Slider>
-          <ButtonBack>Back</ButtonBack>
-          <ButtonNext>Next</ButtonNext>
+
+          <ButtonBack>
+            <ChevronLeftIcon style={{ fontSize: "1.8rem" }} />
+          </ButtonBack>
+          <ButtonNext>
+            <ChevronRightIcon style={{ fontSize: "1.8rem" }} />
+          </ButtonNext>
         </CarouselProvider>
       </Container>
     </>
