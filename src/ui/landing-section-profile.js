@@ -45,9 +45,9 @@ function LandingSectionProfile(props) {
                   fontSize: "4rem",
                   lineHeight: "70px",
                   fontFamily: "Parisienne",
-                  padding: "5px",
+                  padding: "8px",
                 }}
-                className="landing__section__name"
+                className="landing__section__name "
               >
                 {sname}
               </Typography>

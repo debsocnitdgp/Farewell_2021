@@ -58,10 +58,7 @@ function ThankYouBoard(props) {
                 return (
                   <Slide index={index}>
                     <div className="slider">
-                      <ThankYouCard
-                        mes={item}
-                        key={new Date().getMilliseconds().toString()}
-                      />
+                      <ThankYouCard mes={item} />
                     </div>
                   </Slide>
                 );
