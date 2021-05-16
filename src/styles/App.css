@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Parisienne&display=swap');
 html,
 body {
   list-style: none;
@@ -46,14 +48,8 @@ video {
   /*background-color: red;
   
   /* Create the gradient. */
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
-  background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-  background-color: #42378f;
-  background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
-  /* Set the background size and repeat properties. */
-  background-size: 100%;
-  background-repeat: repeat;
+  background-color: #d4418e;
+  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
 
   /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
