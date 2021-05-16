@@ -4,7 +4,6 @@ import AwardsCard from "../components/awards-section-card";
 import { useTheme } from "@material-ui/styles";
 function AwardsSection(props) {
   const awa = props.award;
-  console.log(awa);
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
@@ -24,9 +23,15 @@ function AwardsSection(props) {
             alignItems="center"
             spacing={3}
           >
-            {awa?(awa.map((people) => (<Grid item xs={10} sm={4}>
-              <AwardsCard people={people} />
-            </Grid>))) : (<> </>)}
+            {awa ? (
+              awa.map((people) => (
+                <Grid item xs={10} sm={7} md={5} lg={4}>
+                  <AwardsCard people={people} />
+                </Grid>
+              ))
+            ) : (
+              <> </>
+            )}
           </Grid>
         </Grid>
       </Container>

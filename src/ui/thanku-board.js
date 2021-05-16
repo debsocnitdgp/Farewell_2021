@@ -17,7 +17,8 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import { makeStyles, useTheme } from "@material-ui/styles";
-
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 const useStyles = makeStyles((theme) => ({
   icon: {
     width: theme.spacing(8),
@@ -29,7 +30,6 @@ function ThankYouBoard(props) {
   const classes = useStyles();
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
-  console.log("this is message from thnku board", mes);
   return (
     <>
       <Container className="my-3 py-2 text-center">
@@ -46,30 +46,36 @@ function ThankYouBoard(props) {
             </Icon>
           </Grid>
         </Grid>
+        <Container>
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={125}
+            totalSlides={5}
+            infinite={true}
+          >
+            <Slider>
+              {mes.map((item, index) => {
+                return (
+                  <Slide index={index}>
+                    <div className="slider">
+                      <ThankYouCard
+                        mes={item}
+                        key={new Date().getTime().toString()}
+                      />
+                    </div>
+                  </Slide>
+                );
+              })}
+            </Slider>
 
-        <CarouselProvider
-          naturalSlideWidth={100}
-          naturalSlideHeight={125}
-          totalSlides={5}
-        >
-          <Slider>
-            {mes.map((item, index) => {
-              console.log("this si from if", item);
-              return (
-                <Slide index={index}>
-                  <div className="slider">
-                    <ThankYouCard
-                      mes={item}
-                      key={new Date().getTime().toString()}
-                    />
-                  </div>
-                </Slide>
-              );
-            })}
-          </Slider>
-          <ButtonBack>Back</ButtonBack>
-          <ButtonNext>Next</ButtonNext>
-        </CarouselProvider>
+            <ButtonBack>
+              <ChevronLeftIcon style={{ fontSize: "1.8rem" }} />
+            </ButtonBack>
+            <ButtonNext>
+              <ChevronRightIcon style={{ fontSize: "1.8rem" }} />
+            </ButtonNext>
+          </CarouselProvider>
+        </Container>
       </Container>
     </>
   );

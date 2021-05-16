@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Parisienne&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
 html,
 body {
   list-style: none;
@@ -117,12 +118,32 @@ video {
 
 /*----------------------------------------------------Messages section----------------------------------------------*/
 
-.slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.carousel button {
+  margin: 0 3px;
+  font-family: inherit;
+  border-radius: 50%;
+  border: none;
+  line-height: inherit;
+  background: #123456;
+  color: #fff;
+  padding: 2px;
+}
+.carousel button:disabled {
+  background-color: #bdbfbd;
 }
 
-.carousel .control-dots .dot {
-  background: #123456 !important ;
+@media screen and (max-width: 600px) {
+  .horizontalSlider___281Ls {
+    max-height: 500px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .horizontalSlider___281Ls {
+    max-height: 500px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .horizontalSlider___281Ls {
+    max-height: 400px;
+  }
 }

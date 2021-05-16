@@ -4,7 +4,6 @@ import React from "react";
 
 const ThankYouCard = (props) => {
   const mess = props.mes;
-  console.log("this is mess from card", mess);
   const theme = useTheme();
   const xsUp = useMediaQuery(theme.breakpoints.up("sm"));
   return (
