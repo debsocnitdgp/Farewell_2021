@@ -1,12 +1,9 @@
 import { Container, Grid, Typography, useMediaQuery } from "@material-ui/core";
 import React from "react";
-import { useParams } from "react-router-dom";
 
 import { useTheme } from "@material-ui/styles";
 
 function LandingSectionProfile(props) {
-  const { i } = useParams();
-
   const sname = props.seno;
   const pix = props.pic;
   const des = props.desc;
@@ -47,7 +44,7 @@ function LandingSectionProfile(props) {
                   fontWeight: 400,
                   fontSize: "4rem",
                   lineHeight: "70px",
-                  fontFamily: i === "Sneha Singh" ? "Cookie" : "Parisienne",
+                  fontFamily: "Parisienne",
                   padding: "5px",
                 }}
                 className="landing__section__name"

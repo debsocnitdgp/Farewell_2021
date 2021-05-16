@@ -6,19 +6,18 @@ import "./styles/App.css";
 import "./styles/gallery.css";
 // import "./styles/gallery.scss";
 
-
 import ReactRouterSetup from "./components/Router";
 function App() {
-  const vid = video;
+  const vid =
+    "https://static.videezy.com/system/resources/previews/000/052/185/original/4K-8.mp4";
   return (
     <>
-      <video autoPlay="autoplay" loop="loop" muted >
+      <video autoPlay="autoplay" loop="loop" muted>
         <source src={vid} type="video/mp4" />
         <source src={vid} type="video/ogg" />
       </video>
       {/* <HomePage /> */}
       <ReactRouterSetup />
-     
     </>
   );
 }
